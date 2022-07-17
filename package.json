@@ -1,0 +1,29 @@
+{
+  "name": "uups-proxy-demo",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy_v1": "npx hardhat run ./scripts/deploy_pizza_v1.js --network",
+    "upgrade_v2": "npx hardhat run ./scripts/upgrade_pizza_v2.js --network"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-etherscan": "^3.0.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "@openzeppelin/contracts-upgradeable": "^4.5.0",
+    "@openzeppelin/hardhat-upgrades": "^1.14.0",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.4",
+    "hardhat": "^2.8.4",
+    "truffle-plugin-verify": "^0.5.26"
+  },
+  "dependencies": {
+    "@celo/contractkit": "^2.0.0",
+    "@openzeppelin/contracts": "^4.6.0",
+    "@openzeppelin/truffle-upgrades": "^1.15.0",
+    "@truffle/hdwallet-provider": "^2.0.8",
+    "sol-merger": "^4.1.1"
+  }
+}
